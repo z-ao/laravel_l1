@@ -12,7 +12,6 @@
 $navbar-color: #3c3e42;
 
 /* universal */
-
 body {
 	padding-top: 60px;
 }
@@ -30,7 +29,6 @@ textarea {
 }
 
 /* typography */
-
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1;
 }
@@ -57,7 +55,6 @@ p {
 }
 
 /* header */
-
 .navbar-inverse {
 	background-color: $navbar-color;
 }
@@ -82,8 +79,8 @@ p {
 		background-color: transparent;
 	}
 }
-/* footer */
 
+/* footer */
 footer {
 	margin-top: 45px;
 	padding-top: 5px;
@@ -124,7 +121,6 @@ footer {
 }
 
 /* sidebar */
-
 aside {
 	section {
 		padding: 10px 0;
@@ -165,7 +161,6 @@ section.user_info {
 }
 
 /* forms */
-
 input, textarea, select, .uneditable-input {
 	border: 1px solid #bbb;
 	margin-bottom: 15px;
@@ -177,4 +172,32 @@ input {
 
 .panel {
 	margin-top: 50px;
+}
+
+/* Users edit */
+.gravatar_edit {
+	margin: 15px auto;
+	text-align: center;
+	.gravatar {
+		float: none;
+		max-width: 100px;
+	}
+}
+
+/* Users index */
+.users {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	li {
+		overflow: auto;
+		padding: 10px 0;
+		border-bottom: 1px solid $gray-lighter;
+	}
+}
+
+.delete-btn {
+	float: right;
+	position: relative;
+	right: 0;
 }

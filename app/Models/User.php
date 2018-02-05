@@ -27,6 +27,16 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    //模型初始化时加载
+    public static function boot()
+    {
+        parent::boot();
+        //监听数据库的创建前事件
+        static::creating(function ($user) {
+            $user->activation_token = str_random(30);
+        });
+    }
+
     protected $table = 'users';
 
     public function gravatar($size = '100')

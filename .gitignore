@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .DS_Store
 node_modules/
 
@@ -13,3 +14,17 @@ README.md
 *.ntvs*
 *.njsproj
 *.sln
+=======
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+/.idea
+/.vagrant
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+.env
+>>>>>>> ba0c35f447345da1f9c386e0c6f6c293644d8e2d
